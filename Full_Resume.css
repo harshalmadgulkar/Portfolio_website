@@ -426,7 +426,8 @@ section:nth-child(2n + 1) {
 
 #my-details-container p {
     color: #d9dcdd;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    text-align: justify;
 }
 
 .my-details-info-container {
