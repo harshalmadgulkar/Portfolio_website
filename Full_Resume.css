@@ -12,9 +12,10 @@ body::-webkit-scrollbar {
 /* Body Header */
 
 #body-header {
-    height: 65vh;
+    height: 55vh;
     opacity: 0.8;
-    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-color: #000000;
+    /* background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -81,7 +82,7 @@ body::-webkit-scrollbar {
 
 .horizontal-list li {
     display: inline-block;
-    margin: 0px 8px 8px 0px;
+    margin: 4px;
 }
 
 
@@ -94,19 +95,32 @@ body::-webkit-scrollbar {
     border-bottom: 1px solid black;
 }
 
-
 /* Name and Social Icons*/
 
 #name-social-container {
-    margin-top: 20vh;
+    margin-top: 2vh;
 }
 
 #my-name {
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 0.1rem;
-    color: white;
+    color: rgb(249, 249, 249);
     font-weight: 700;
     margin-bottom: 0.5rem;
+}
+
+#job-role {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: rgb(249, 249, 249);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons li {
+    border-radius: 50%;
+    height: auto;
+    width: auto;
 }
 
 .social-icons li a i {
@@ -115,8 +129,9 @@ body::-webkit-scrollbar {
     border-radius: 50%;
 }
 
-.social-icons li a i:hover {
-    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+.social-icons li:hover {
+    box-shadow: 0px 0px 5px 5px rgb(68, 255, 0);
+    /* border-radius: 50%; */
 }
 
 
@@ -150,8 +165,6 @@ section:nth-child(2n + 1) {
     padding-top: 10px;
     margin-right: 0.5rem;
 }
-
-
 
 /* About Section */
 
@@ -188,7 +201,6 @@ section:nth-child(2n + 1) {
 }
 
 
-
 /* /Skills Section/ */
 
 .skills-display {
@@ -223,7 +235,6 @@ section:nth-child(2n + 1) {
 }
 
 
-
 /* Work Experience */
 
 .timeline {
@@ -245,7 +256,7 @@ section:nth-child(2n + 1) {
     position: absolute;
     width: 15px;
     height: 15px;
-    background-color: lightgrey;
+    background-color: rgb(67, 67, 67);
     top: 25%;
     border-radius: 50%;
     z-index: 2;
@@ -325,11 +336,6 @@ section:nth-child(2n + 1) {
     line-height: 20px;
 }
 
-
-
-
-
-
 /* Portfolio Section */
 
 #portfolio-container {
@@ -380,8 +386,8 @@ section:nth-child(2n + 1) {
 /* Contact Form */
 
 #contact {
-    background-color: #0abcf9;
-    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    /* background-color: #0abcf9; */
+    background-image: linear-gradient(50deg, #28a443 0%, #eb4c08 74%);
     color: white;
     padding-bottom: 40px;
 }
@@ -393,6 +399,10 @@ section:nth-child(2n + 1) {
 
 #contact-form {
     margin-left: 20%;
+}
+
+#contact-form ::placeholder {
+    color: white;
 }
 
 #contact-container {
@@ -442,17 +452,20 @@ section:nth-child(2n + 1) {
 
 
 #contact-form input,
-textarea {
+textarea{
     max-width: 90%;
     margin: 15px;
     padding: 4px 10px;
     border: 0px solid transparent;
     border-bottom: 2px solid white;
-    color: #d9dcdd;
+    color: #000000;
     background: transparent;
     width: 90%;
     line-height: 1.6;
     font-size: 1.05rem;
+    font-family: sans-serif;
+    cursor: auto;
+    caret-color: black;
 }
 
 #contact-form button[type="submit"] {
@@ -478,8 +491,8 @@ textarea {
 
 #contact .social-icons li a i {
     font-size: 1.2rem;
-    margin: 40px 10px 10px;
-    padding: 10px 14px 20px 10px;
+    margin: 10px;
+    /* padding: 10px 14px 20px 10px; */
 
 }
 
@@ -583,23 +596,6 @@ button:focus {
     width: 50%;
 }
 
-@media only screen and (max-width: 572px) {
-    
-    .timeline-box {
-        width: 100%;
-        left: 10% !important;
-    }
-
-    .bars {
-        display: block;
-    }
-    
-    
-    .nav-menu {
-        display: none;
-    } 
-}
-
 @media only screen and (max-width: 768px) {
     .timeline-box {
         width: 90%;
@@ -607,7 +603,7 @@ button:focus {
     }
 
     .timeline-box::after {
-        left: -9.3% !important;
+        left: -10% !important;
     }
 
     #timeline-divider {
@@ -633,4 +629,59 @@ button:focus {
         margin: 10%;
     }
 
+    #name-social-container {
+        margin-top: 0vh;
+    }
+    
+    #my-name {
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+        color: rgb(249, 249, 249);
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+    
+    #job-role {
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        color: rgb(249, 249, 249);
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 572px) {
+    
+    .timeline-box {
+        width: 100%;
+        left: 10% !important;
+    }
+
+    .bars {
+        display: block;
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+
+    #name-social-container {
+        margin-top: 0vh;
+    }
+    
+    #my-name {
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+        color: rgb(249, 249, 249);
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+    
+    #job-role {
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        color: rgb(249, 249, 249);
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
 }
