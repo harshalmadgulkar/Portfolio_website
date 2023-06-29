@@ -40,20 +40,20 @@ body::-webkit-scrollbar {
 .dropdown-list{
     margin: 0;
     display: none;
-    background-color: #828470;
+    background-color: #1f1f1e;
     box-shadow: 0px 4px 8px 1px #535547;
-}
-
-.dropdown-list ul{
-    margin: 0.2rem 0.2rem;
-    text-align: left;
-    padding: 0px 0.8rem;
 }
 
 .dropdown-menu:hover .dropdown-list{
     display: block;
     position: absolute;
     right: 3%;
+}
+
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
 }
 
 .dropdown-list li{
