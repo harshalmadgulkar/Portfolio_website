@@ -115,6 +115,7 @@ body::-webkit-scrollbar {
     color: rgb(249, 249, 249);
     font-weight: 700;
     margin-bottom: 0.5rem;
+    text-transform: uppercase;
 }
 
 .social-icons li {
